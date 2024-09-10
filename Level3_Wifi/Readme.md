@@ -77,6 +77,14 @@ if wifi.isconnected():
 else:
     print("Time OuT")
 ```
+**Output(if connected)**
+```txt
+Connecting..
+5
+4
+Connected
+```
+
 **Output(if not connected)**
 ```txt
 Connecting..
