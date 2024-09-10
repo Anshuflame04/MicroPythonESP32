@@ -46,3 +46,44 @@ print(wifi.ifconfig())
 ```txt
 ('192.168.4.1', '255.255.255.0', '192.168.4.1', '0.0.0.0')
 ```
+
+## **Project 6(Connecting to WIFI using ESP32)**
+Trying to connect to wifi, if wifi not connected -> then it will come out of the loop after 5 sec
+```py
+import network
+import time
+
+timeout = 0
+
+wifi = network.WLAN(network.STA_IF)
+
+#Restarting wifi
+wifi.active(False)
+time.sleep(0.5)
+wifi.active(True)
+
+wifi.connect('wifianshu','*********')
+
+if not wifi.isconnected():
+    print("Connecting..")
+    while (not wifi.isconnected() and timeout < 5):
+        print(5 - timeout)
+        timeout = timeout + 1
+        time.sleep(1)
+
+
+if wifi.isconnected():
+    print("Connected")
+else:
+    print("Time OuT")
+```
+**Output(if not connected)**
+```txt
+Connecting..
+5
+4
+3
+2
+1
+Time OuT
+```
