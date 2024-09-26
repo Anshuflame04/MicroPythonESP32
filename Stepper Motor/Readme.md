@@ -16,4 +16,7 @@
 * GND of ESP32 is connected to GND of A4988
 * VIN of ESP32 is connected to VDD of A4988
 * A1, A2, B1, B2 -> A-, A+, B-, B+
-![Stepper Motor Diagram](images/diagram.png)
+
+
+<img src="motot.png" alt="Stepper Motor Diagram" style="width:50%;">
+
