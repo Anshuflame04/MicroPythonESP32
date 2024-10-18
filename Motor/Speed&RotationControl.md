@@ -10,4 +10,4 @@
   - **Dynamic Speed Printing**: The `print_speed` function outputs the current speed in steps per second and RPM, providing real-time feedback.
   - **Direction Handling**: The `forward_motion` and `backward_motion` functions encapsulate the logic for moving the motor in either direction while printing the speed after each action.
 
-https://wokwi.com/projects/410838311265556481
+https://wokwi.com/projects/412092295921341441
